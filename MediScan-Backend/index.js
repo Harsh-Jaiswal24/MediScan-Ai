@@ -191,7 +191,7 @@ app.post("/symptom-check", upload.single("image"), async (req, res) => {
 });
 
 app.get("/userreports",async (req,res)=>{
-  console.log("get req")
+  // console.log("get req")
   const { userId } = req.query;
   if (!userId) {
     return res.status(400).json({ error: "Missing userId in query" });
@@ -216,5 +216,5 @@ app.get("/userreports",async (req,res)=>{
 
 
 app.listen(port, () => {
-  console.log(`🚀 Server running on http://localhost:${port}`);
+  console.log(`🚀 Server running on port: ${port}`);
 });

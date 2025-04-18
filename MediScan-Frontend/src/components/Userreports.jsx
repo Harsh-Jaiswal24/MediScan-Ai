@@ -161,8 +161,8 @@ const UserReport = () => {
     doc.setTextColor(0, 120, 255);
     doc.text("Visit us: ", 20, y);
     doc.setTextColor(0, 120, 255);
-    doc.textWithLink("bit.ly/mediscan", 40, y, {
-      url: "https://bit.ly/mediscan",
+    doc.textWithLink("bit.ly/mediscanai", 40, y, {
+      url: "https://bit.ly/mediscanai",
     });
   
     doc.save(`MediScan_Report_${index + 1}_${subIndex + 1}.pdf`);
