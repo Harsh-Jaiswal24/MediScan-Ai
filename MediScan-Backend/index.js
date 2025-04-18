@@ -91,7 +91,7 @@ app.post("/symptom-check", upload.single("image"), async (req, res) => {
 
   try {
     // Convert image to base64
-    const imageUrl = `http://localhost:3030/uploads/${file.filename}`;
+    const imageUrl = `https://mediscan-backend-rvc7.onrender.com/uploads/${file.filename}`;
     
     // Fetch the image and convert it to ArrayBuffer
     const response = await fetch(imageUrl);

@@ -18,7 +18,7 @@ const UserReport = () => {
       if (!isLoaded || !user) return;
 
       try {
-        const res = await axios.get("http://localhost:3030/userreports", {
+        const res = await axios.get("https://mediscan-backend-rvc7.onrender.com/userreports", {
           params: { userId: user.id },
         });
 

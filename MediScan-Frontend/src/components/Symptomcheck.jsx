@@ -27,7 +27,7 @@ const SymptomCheck = () => {
 
     try {
       setLoading(true);
-      const res = await axios.post("http://localhost:3030/symptom-check", formData, {
+      const res = await axios.post("https://mediscan-backend-rvc7.onrender.com/symptom-check", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
